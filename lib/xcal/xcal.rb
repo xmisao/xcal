@@ -47,7 +47,7 @@ module Xcal
   def get_japan_holidays()
     holidays = {}
     ical = open(URL){|f| f.read}
-    cals = Icalendar.parse(ical)
+    cals = Icalendar::Calendar.parse(ical)
     cals.each{|cal|
       cal.events.each{|event|
         start = event.dtstart

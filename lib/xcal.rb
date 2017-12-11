@@ -1,6 +1,9 @@
-require 'date'
-require 'open-uri'
-require 'icalendar'
+module Xcal
+  require 'date'
+  require 'open-uri'
 
-require "xcal/version"
-require "xcal/xcal"
+  require 'icalendar'
+
+  require "xcal/version"
+  require "xcal/xcal"
+end

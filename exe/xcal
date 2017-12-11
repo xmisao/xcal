@@ -2,6 +2,5 @@
 
 require 'rubygems'
 require 'xcal'
-include Xcal
 
-main()
+Xcal::Xcal.new.main(ARGV)

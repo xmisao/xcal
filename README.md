@@ -1,10 +1,13 @@
 # xcal
 
 xcalは休日の色付き表示に対応したcal, ncalライクなカレンダーコマンドです。
+カレンダーはカラフルに土曜日が青色、日曜日と休日が赤色で表示されます。
+
 休日の情報は表示のたびにiCal(icsファイル)をダウンロードして取得します。
 デフォルトではGoogleが提供するiCalを利用し日本の休日を表示します。
 また任意のicsファイルを指定して休日を表示することもできます。
-カレンダーはカラフルに土曜日が青色、日曜日と休日が赤色で表示されます。
+
+![xcal demo](https://raw.githubusercontent.com/xmisao/demos/master/xcal/xcal_demo.png)
 
 ## インストール
 

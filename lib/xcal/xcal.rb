@@ -46,7 +46,7 @@ class Xcal::Xcal
 
   def fetch_holidays_from_remote_ics(ics_url)
     holidays = {}
-    ical = open(ics_url){|f| f.read}
+    ical = URI.open(ics_url){|f| f.read}
     cals = Icalendar::Calendar.parse(ical)
     cals.each{|cal|
       cal.events.each{|event|
